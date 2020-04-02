@@ -27,5 +27,14 @@ module.exports = {
     
     
     
+  },
+
+  listLogin: (req, res) =>{
+    res.render('login', {title: "Login"})
+  },
+
+  login: (req, res) => {
+    
+
   }
 }
