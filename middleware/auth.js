@@ -9,12 +9,12 @@ const auth = (req, res, next) => {
     info = JSON.parse(info)
     console.log(typeof info)
     info.forEach(usuario => {
-        if (usuario.email == email && bcrypt.compareSync(senha, usuario.senha)) {
+        if (usuario.email ==email && bcrypt.compareSync(senha, usuario.senha)) {
             return next()
         }
     });
     
-    res.redirect("/")
+    res.redirect("/login")
 
 }
 
