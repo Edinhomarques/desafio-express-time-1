@@ -34,7 +34,11 @@ module.exports = {
   },
 
   login: (req, res) => {
-    
 
+    const caminho = path.join('db', 'usuarios.json')
+    let info = fs.readFileSync(caminho, {encoding:"utf-8"})
+    info = JSON.parse(info)
+
+    res.render("listfiles", {title: "Painel", info})
   }
 }
