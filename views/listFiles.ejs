@@ -1,0 +1,55 @@
+<%- include('./partials/header') %>
+
+<main class=" text-center">
+  <h1 class="h3">Inscritos na newsletter</h1>
+  <div class="">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">email</th>
+        <th scope="col">data</th>
+        <th scope="col">hora</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% listaNew.map((item, index) => {%>
+      <tr>
+        <th scope="row"><%= index + 1%></th>
+        <td><%= item.nome %></td>
+        <td><%= item.email %></td>
+        <td><%= item.data %></td>
+        <td><%= item.horario %></td>
+        
+      </tr>
+      <%})%>
+    </tbody>
+  </table>
+  </div>
+  <div class="py-2 my-3">
+    <h1 class="h3">Preencheu Formulário de Contato</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">email</th>
+        <th scope="col">mensagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% listaContato.map((item, index) => {%>
+      <tr>
+        <th scope="row"><%= index + 1%></th>
+        <td><%= item.nome %></td>
+        <td><%= item.email %></td>
+        <td><%= item.mensagem %></td>
+      </tr>
+      <%})%>
+    </tbody>
+  </table>
+  </div>
+</main>
+
+<%- include('partials/footer'); %>
