@@ -8,13 +8,13 @@ const auth = require("../middleware/auth")
 router.get('/', homeController.index);
 router.post('/contato', homeController.contato)
 router.post('/sucesso', homeController.newsletter)
-router.get('/listFiles', homeController.listFiles)
+router.get('/listFiles', auth, homeController.listFiles)
 
 
 router.get('/cadastro', UsuarioController.listUser )
 router.post('/cadastro', UsuarioController.cadastroUsuario )
 
 router.get('/login', UsuarioController.listLogin )
-router.post('/login', auth,  UsuarioController.login )
+router.post('/login', auth, UsuarioController.usuarioAutenticado )
 
 module.exports = router;

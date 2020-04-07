@@ -1,1 +1,23 @@
-[{"nome":"EDSON MARQUES ALVES FILHO","email":"edson_csl@hotmail.com","senha":"$2b$10$d4TbBEk8AYg6bHRQBnHjw.MuBfn.mhC.bwQ863hGYOk96BHAWrVBq"},{"nome":"Daniel","email":"danielandradesoares@hotmail.com","senha":"$2b$10$umOoyjpVJ12C33ZGoTX.eOGNzhK0OX5g2rG.sSWcdlzeBmgapPA62"},{"nome":"Daniel","email":"danielandradesoares@hotmail.com","senha":"$2b$10$UCNfp.CewEVkhJA1a5MwvOiX/Y5PDCTdlReX2x.lVK0XGBMeab1cG"},{"nome":"Daniel","email":"danielandradesoares@hotmail.com","senha":"$2b$10$qgElvxK6U9TK8hUZr2/6oeHjMBJ3Re.vxsFHfZ57bOmZ6row08J26"}]
+[
+    {
+        "nome": "EDSON MARQUES ALVES FILHO",
+        "email": "edson_csl@hotmail.com",
+        "senha": "$2b$10$d4TbBEk8AYg6bHRQBnHjw.MuBfn.mhC.bwQ863hGYOk96BHAWrVBq"
+    }, {
+        "nome": "Daniel",
+        "email": "danielandradesoares@hotmail.com",
+        "senha": "$2b$10$umOoyjpVJ12C33ZGoTX.eOGNzhK0OX5g2rG.sSWcdlzeBmgapPA62"
+    }, {
+        "nome": "Daniel",
+        "email": "danielandradesoares@hotmail.com",
+        "senha": "$2b$10$UCNfp.CewEVkhJA1a5MwvOiX/Y5PDCTdlReX2x.lVK0XGBMeab1cG"
+    }, {
+        "nome": "Daniel",
+        "email": "danielandradesoares@hotmail.com",
+        "senha": "$2b$10$qgElvxK6U9TK8hUZr2/6oeHjMBJ3Re.vxsFHfZ57bOmZ6row08J26"
+    }, {
+        "nome": "juliana",
+        "email": "juliana@gmail.com",
+        "senha": "$2b$10$ga6Tjvdb2/3/XBGaxiyfVux6arEpoRCaFioOjJT0zvjT4CjnHZky6"
+    }
+]
