@@ -42,7 +42,8 @@ module.exports = {
     info.forEach(usuario => {
         if (usuario.email ==email && bcrypt.compareSync(senha, usuario.senha)) {
           req.session.usuarioLogado=usuario.nome
-          return next()
+          res.redirect("/listFiles")
+         
         }
     });
     
