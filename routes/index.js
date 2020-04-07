@@ -15,6 +15,6 @@ router.get('/cadastro', UsuarioController.listUser )
 router.post('/cadastro', UsuarioController.cadastroUsuario )
 
 router.get('/login', UsuarioController.listLogin )
-router.post('/login', auth, UsuarioController.usuarioAutenticado )
+router.post('/login', UsuarioController.login )
 
 module.exports = router;

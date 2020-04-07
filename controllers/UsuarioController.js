@@ -33,8 +33,19 @@ module.exports = {
     res.render('login', {title: "Login"})
   },
 
-  usuarioAutenticado: (req, res) => {
-
-    res.redirect("/listFiles")
+  login: (req, res) => {
+    let {email, senha} = req.body
+    const caminho = path.join('db', 'usuarios.json')
+    let info = fs.readFileSync(caminho, {encoding:"utf-8"})
+    info = JSON.parse(info)
+    console.log(typeof info)
+    info.forEach(usuario => {
+        if (usuario.email ==email && bcrypt.compareSync(senha, usuario.senha)) {
+          req.session.usuarioLogado=usuario.nome
+          return next()
+        }
+    });
+    
+    res.redirect("/login")
   }
 }
